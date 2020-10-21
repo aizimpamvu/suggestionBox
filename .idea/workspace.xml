@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b3ac28c-0b56-4be6-9c4c-33ba38478fc4" name="Default Changelist" comment="" />
+    <list default="true" id="4b3ac28c-0b56-4be6-9c4c-33ba38478fc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/suggestionPrecedence.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AddDepartment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AddDepartment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AddDepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AddDepartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Unit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assigned_to.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assigned_to.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/unit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +27,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -127,6 +144,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1g331rPnuGKzMleQykWNfC3wPcR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -144,7 +162,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -198,40 +216,48 @@
       <workItem from="1601987661261" duration="2891000" />
       <workItem from="1602059554197" duration="593000" />
       <workItem from="1602063946105" duration="972000" />
-      <workItem from="1602072872425" duration="649000" />
+      <workItem from="1602072872425" duration="9883000" />
+      <workItem from="1602140789240" duration="7416000" />
+      <workItem from="1602231656960" duration="765000" />
+      <workItem from="1602233252269" duration="1582000" />
+      <workItem from="1602499351364" duration="2071000" />
+      <workItem from="1602569666021" duration="9738000" />
+      <workItem from="1602654896007" duration="11541000" />
+      <workItem from="1602740242101" duration="13267000" />
+      <workItem from="1602830752246" duration="4979000" />
+      <workItem from="1603088782035" duration="891000" />
+      <workItem from="1603191109847" duration="3109000" />
+      <workItem from="1603260239572" duration="319000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601456387110">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601456387110" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601470169862">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602760239484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601470169862" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602760239484" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601456047608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601456047608" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1599721064740">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1602233149897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599721064740" />
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602233149897" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1601466676437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601466676437" />
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1601542799265">
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1603202753172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601542799265" />
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603202753172" />
   </component>
 </project>

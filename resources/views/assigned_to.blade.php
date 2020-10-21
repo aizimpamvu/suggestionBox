@@ -27,7 +27,6 @@
                             data-toggle="modal" data-target="#assignModal" data-whatever="@getbootstrap"><i
                                 class="fas fa-tasks"></i>View Details
                         </button>
-
                 </td>
             </tr>
         @endforeach

@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class AddDepartment extends Model
 {
-    public function departmentUnits()
+    protected $table="add_departments";
+    public function units()
     {
-        return $this->hasMany(DepartmentUnit::class);
+        return $this->hasMany(Unit::class);
     }
 }

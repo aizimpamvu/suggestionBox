@@ -21,6 +21,16 @@ Route::middleware('auth')->group(function () {
                 Route::get('addDepartment','AddDepartmentController@departmentList');
                 Route::post('addDepartment','AddDepartmentController@addDepartment')->name('add.department');
                 Route::get('deleteDepartment/{departmentId}', 'AddDepartmentController@deleteDepartment');
+
+                //Add Unit
+                Route::view('units','unit');
+                Route::get('units','UnitController@unitsList');
+                Route::post('units','UnitController@addUnit')->name('add.unit');
+                Route::get('deleteUnit/{unitId}', 'UnitController@deleteUnit');
+                //Add Precedence
+                Route::view('suggestionPrecedence','suggestionPrecedence');
+                Route::get('suggestionPrecedence','SuggestionPrecedenceController@suggestionPrecedenceList');
+                Route::post('suggestionPrecedence','SuggestionPrecedenceController@addPrecedence')->name('add.precedence');
         });
         Route::get('/usersManagement', 'SuggestionBoxController@usersManagement');
 
@@ -34,6 +44,11 @@ Route::middleware('auth')->group(function () {
     Route::get('units','UnitController@unitsList');
     Route::post('units','UnitController@addUnit')->name('add.unit');
     Route::get('deleteUnit/{unitId}', 'UnitController@deleteUnit');
+    //Add Precedence
+    Route::view('suggestionPrecedence','suggestionPrecedence');
+    Route::get('suggestionPrecedence','SuggestionPrecedenceController@suggestionPrecedenceList');
+    Route::post('suggestionPrecedence','SuggestionPrecedenceController@addPrecedence')->name('add.precedence');
+
 });
 
 

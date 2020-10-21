@@ -97,12 +97,23 @@
                             @endforeach
                         </select>
                     </div>
+
                     <div class="form-group">
                         <label for="staff-name" class="col-form-label">Staff names</label>
                         <select class="form-control" name="assigned_user" id="staff-name">
                             <option value="">__Select a staff__</option>
                             @foreach($assignStaff as $staff)
                                 <option value="{{$staff->id}}"> {{$staff->names}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="staff-name" class="col-form-label">Suggestion Priority</label>
+                        <select class="form-control" name="suggestion-priority" id="suggestion-priority">
+                            <option value="">__Suggestion Priority__</option>
+                            @foreach($precedence as $precedences)
+                                <option value="{{$precedences->id}}"> {{$precedences->precedence}}</option>
                             @endforeach
                         </select>
                     </div>

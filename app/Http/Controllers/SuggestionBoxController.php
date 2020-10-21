@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\SuggestionPrecedence;
 use Illuminate\Http\Request;
 use App\Suggestion;
 use Illuminate\Support\Facades\DB;
@@ -29,9 +30,9 @@ class SuggestionBoxController extends Controller
         $data = Suggestion::all();
         $department = AddDepartment::all();
         $assignStaff = DB::table('users')->get();
+        $precedence=SuggestionPrecedence::all();
 
-
-        return view('list', ["data" => $data, "assignStaff" => $assignStaff,"department"=> $department]);
+        return view('list', ["data" => $data, "assignStaff" => $assignStaff,"department"=> $department,'precedence'=>$precedence]);
     }
 
     //Edit Users
@@ -53,7 +54,6 @@ class SuggestionBoxController extends Controller
         $usr->save();
         $request->session()->flash('status', $usr->names . ' updated successfully');
         return back();
-//        $editStaff=DB::table('users')->get();
 
     }
 
@@ -64,7 +64,6 @@ class SuggestionBoxController extends Controller
         $roles = DB::table('roles')->get();
 
 
-//        dd($request);
         return view('usersManagement', ["data" => $data, 'roles' => $roles]);
     }
 
@@ -75,7 +74,7 @@ class SuggestionBoxController extends Controller
             'optradio' => 'required',
             'suggestion' => 'required|max:2000',
         ]);
-//        return view('giveSuggestion');
+
         $sugg = new Suggestion();
         $sugg->anonymity = $request->input("optradio");
         $sugg->names = $request->input('names');
@@ -114,7 +113,6 @@ class SuggestionBoxController extends Controller
     //Code to Edit Suggestion
     function edit($suggId)
     {
-//        $data = new Suggestion();
         $data = Suggestion::find($suggId);
         return view('editSuggestion', ['data' => $data]);
     }
@@ -141,7 +139,7 @@ class SuggestionBoxController extends Controller
 
     function register(Request $request)
     {
-//        return $request->input();
+
         $user = new User();
         $user->names = $request->input('names');
         $user->email = $request->input('email');

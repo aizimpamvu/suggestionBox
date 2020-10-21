@@ -39,20 +39,23 @@
                             </li>
 
                             @endcan
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 
+                                    <div class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="/usersManagement" ><i class="fas fa-users"></i> Users</a>
+
+                                        <a class="dropdown-item " href="/addDepartment" id="departments" ><i class="fa fa-link" aria-hidden="true"></i> Departments</a>
+                                        <a class="dropdown-item " href="/units" id="units" >Units</a>
+                                        {{--                        <a class="dropdown-item " href="/units" id="precedence" >U</a>--}}
+
+                                    </div>
+                                </li>
 
                         @endcan
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 
-                    <div class="dropdown-menu">
-
-                        <a class="dropdown-item" href="/usersManagement" ><i class="fas fa-users"></i> Users</a>
-
-                        <a class="dropdown-item " href="/addDepartment" id="departments" ><i class="fa fa-link" aria-hidden="true"></i> Departments</a>
-                    </div>
-                </li>
                 @endif
             </ul>
             <ul class="nav navbar-nav navbar-right">

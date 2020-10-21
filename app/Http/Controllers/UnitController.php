@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\AddDepartment;
-use App\DepartmentUnit;
 use App\Unit;
+use Session;
 use Illuminate\Http\Request;
 
 class UnitController extends Controller
 {
     //Display Units
+
     public function unitsList(){
-        $departUnit=DepartmentUnit::all();
+
         $unit = Unit::all();
         $department=AddDepartment::all();
 
@@ -28,7 +29,7 @@ class UnitController extends Controller
     public function deleteUnit($unitId)
     {
         $delUnit = AddDepartment::find($unitId);
-//        $delUser->roles()->detach();
+
         $delUnit ->delete();
         Session::flash('status', 'Unit has been deleted Successfully ');
         return back();
