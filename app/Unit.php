@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Unit extends Model
 {
     protected $table="units";
-    public function departments()
+    public function department()
     {
         return $this->belongsTo(AddDepartment::class);
     }

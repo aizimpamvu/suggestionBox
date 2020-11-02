@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b3ac28c-0b56-4be6-9c4c-33ba38478fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/suggestionPrecedence.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AddDepartment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AddDepartment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AddDepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AddDepartmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Unit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assigned_to.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assigned_to.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/unit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +222,13 @@
       <workItem from="1602830752246" duration="4979000" />
       <workItem from="1603088782035" duration="891000" />
       <workItem from="1603191109847" duration="3109000" />
-      <workItem from="1603260239572" duration="319000" />
+      <workItem from="1603260239572" duration="1992000" />
+      <workItem from="1603271352689" duration="4604000" />
+      <workItem from="1603344938670" duration="1331000" />
+      <workItem from="1603875953678" duration="883000" />
+      <workItem from="1603894480322" duration="1778000" />
+      <workItem from="1604039206377" duration="554000" />
+      <workItem from="1604296743609" duration="7004000" />
     </task>
     <servers />
   </component>
@@ -255,9 +256,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601466676437" />
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1603202753172">
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1604336533675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603202753172" />
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604336533675" />
   </component>
 </project>

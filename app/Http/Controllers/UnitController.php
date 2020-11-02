@@ -22,6 +22,7 @@ class UnitController extends Controller
 
         $unit=new Unit();
         $unit->name=$request->input('unitName');
+        $unit->department_id=$request->input('departmentName');
         $request->session()->flash('status', 'Unit added successfully');
         $unit->save();
         return back();

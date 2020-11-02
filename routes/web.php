@@ -39,15 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::post('editSuggestion/{id}', 'SuggestionBoxController@updateSuggestion');
     Route::post('/suggestion/{suggestion}/assign', 'AssignedSuggestionController@store')->name('suggestion.assign');
     Route::get('/suggestion/assigned/{user}/user', 'AssignedSuggestionController@assignedTo')->name('suggestion.assignedToMe');
-    //Add Unit
-    Route::view('units','unit');
-    Route::get('units','UnitController@unitsList');
-    Route::post('units','UnitController@addUnit')->name('add.unit');
-    Route::get('deleteUnit/{unitId}', 'UnitController@deleteUnit');
-    //Add Precedence
-    Route::view('suggestionPrecedence','suggestionPrecedence');
-    Route::get('suggestionPrecedence','SuggestionPrecedenceController@suggestionPrecedenceList');
-    Route::post('suggestionPrecedence','SuggestionPrecedenceController@addPrecedence')->name('add.precedence');
+
 
 });
 

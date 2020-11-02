@@ -33,14 +33,15 @@
                 @if(auth()->check())
 
                         @can('manage-users')
-                            @can('edit-users')
+                           @can('edit-users')
                             <li class="nav-item">
                                 <a class="nav-link" href="/list" ><i class="fa fa-list" aria-hidden="true" ></i>Suggestions</a>
                             </li>
 
                             @endcan
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
+                                    <a class="nav-link dropdown-toggle" id="navbardrop"php
+                                       data-toggle="dropdown" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 
                                     <div class="dropdown-menu">
 

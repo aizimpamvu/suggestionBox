@@ -35,7 +35,7 @@
             <tr>
                 <th scope="row">{{$unit->id}}</th>
                 <td scope="row ">{{$unit->name}}</td>
-{{--                <td scope="row ">{{$unit->add_departments->department_name}}</td>--}}
+                <td scope="row ">{{$unit->department->department_name}}</td>
                 <td scope="row">{{$unit->created_at}}</td>
                 <td>
                     @can('delete-users')
@@ -76,7 +76,7 @@
                     </div>
                     <div class="form-group">
                         <label for="department" class="col-form-label">Department</label>
-                        <select class="form-control"  id="departmentName" required>
+                        <select class="form-control"  id="departmentName" name="departmentName" required>
                             <option required>__Select Department__</option>
                             @foreach($departments as $department)
                                 <option value="{{$department->id}}">{{$department->department_name}}</option>
