@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b3ac28c-0b56-4be6-9c4c-33ba38478fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e854edee1b7311838652fc122989438e43e3432" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6fbd4bf8db0485018fea16bd4b4c843166f78211" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98b8cd6cd7c5a4d39ef18f66061aad53decc4ce6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1ee90bd5d36876a9ac78c3d64c0c66d2cbd7ba9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_162923_add_unit_id_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/suggestions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f518d3e93589e58ecf46486781b59ee7b76eb8a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f518d3e93589e58ecf46486781b59ee7b76eb8a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e3ac96f833d509e410b2d0ef1d7da07bec76030" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e3ac96f833d509e410b2d0ef1d7da07bec76030" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionBoxController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Unit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/giveSuggestion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/giveSuggestion.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usersManagement.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +235,7 @@
       <workItem from="1605766119252" duration="1137000" />
       <workItem from="1605769081661" duration="665000" />
       <workItem from="1605852401811" duration="490000" />
-      <workItem from="1606111872037" duration="16141000" />
+      <workItem from="1606111872037" duration="18184000" />
     </task>
     <servers />
   </component>
@@ -278,10 +259,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602233149897" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1601466676437">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606152361790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601466676437" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606152361790" />
     <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1606138966496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
