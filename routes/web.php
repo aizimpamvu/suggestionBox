@@ -11,6 +11,7 @@ Auth::routes();
 Route::middleware('auth')->group(function () {
     Route::middleware('can:manage-users')->group(function () {
         Route::get('/list', 'SuggestionBoxController@list');
+        Route::get('/suggestion','SuggestionBoxController@list');
             Route::middleware('can:edit-users')->group(function () {
                  Route::get('delete/{id}', 'SuggestionBoxController@delete');
                  Route::get('deleteUser/{id}', 'SuggestionBoxController@deleteUser');

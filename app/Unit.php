@@ -11,4 +11,8 @@ class Unit extends Model
     {
         return $this->belongsTo(AddDepartment::class);
     }
+    public function hasUsers()
+    {
+        return $this->hasMany(User::class);
+    }
 }

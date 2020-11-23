@@ -23,13 +23,13 @@
         {{@csrf_field()}}
         <div class="form-check-inline">
             <label class="form-check-label ">
-                <input type="radio" class="form-check-input" name="optradio" value="Yes" onclick="myFunctionDisable()">Prefer to remain anonymous
+                <input type="radio" class="form-check-input" name="optradio" value="Yes" onclick="myFunctionDisable()">Remain anonymous
             </label><br><br><br><br>
         </div>
 
         <div class="form-check-inline ">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optradio" value="No" onclick="myFunctionEnable()">Prefer to be identified
+                <input type="radio" class="form-check-input" name="optradio" value="No" onclick="myFunctionEnable()">Prefer to bedentified
             </label>
             <br><br>
         </div>

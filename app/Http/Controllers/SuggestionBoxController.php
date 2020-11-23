@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Session;
 use App\User;
 use App\AddDepartment;
+use App\Unit;
 use Gate;
 use App\Role;
 use Validator;
@@ -31,13 +32,15 @@ class SuggestionBoxController extends Controller
         $department = AddDepartment::all();
         $assignStaff = DB::table('users')->get();
         $precedence=SuggestionPrecedence::all();
+        $unit=Unit::all();
 
-        return view('list', ["data" => $data, "assignStaff" => $assignStaff,"department"=> $department,'precedence'=>$precedence]);
+        return view('list', ["data" => $data, "assignStaff" => $assignStaff,"department"=> $department,'unit'=>$unit,'precedence'=>$precedence]);
     }
 
     //Edit Users
     function updateUsers(Request $request, $id)
     {
+//        return $request->all();
         if (Gate::denies('edit-users')) {
             Session::flash('danger', 'You don\'t have a permission to edit a user');
             return back();
@@ -49,6 +52,7 @@ class SuggestionBoxController extends Controller
         ]);
         $usr = User::find($id);
         $usr->names = $request->input('names');
+        $usr->unit_id = $request->unit;
         $usr->email = $request->input('email');
         $usr->roles()->sync($request->roles);
         $usr->save();
@@ -62,9 +66,9 @@ class SuggestionBoxController extends Controller
     {
         $data = User::all();
         $roles = DB::table('roles')->get();
+        $unit=DB::table('units')->get();
 
-
-        return view('usersManagement', ["data" => $data, 'roles' => $roles]);
+        return view('usersManagement', ["data" => $data, 'roles' => $roles,'units'=>$unit]);
     }
 
     //Add a suggestion

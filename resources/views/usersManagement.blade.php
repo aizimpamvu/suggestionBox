@@ -32,6 +32,7 @@
         </thead>
         <tbody>
         @foreach($data as $item)
+            {{--dd($item->roles()->pluck('name')->toArray())--}}
             <tr>
                 <th scope="row">{{$item->id}}</th>
                 <td>{{$item->names}}</td>
@@ -43,7 +44,7 @@
                         <i class='fas fa-trash' style="color: red"></i></a>
                     @endcan
                     @can('edit-users')
-                    <button type="button" class="create-modal btn btn-outline-primary btn-sm edit" id="{{$item->id}}"
+                    <button type="button" class="create-modal btn btn-outline-primary btn-sm edit" id="{{$item->id}}" data-unit="{{$item->unit_id}}" data-roles="{{json_encode($item->roles->pluck('id')->toArray())}}"
                             data-toggle="modal" data-target="#editModal" data-whatever="@getbootstrap"><i
                             class='fas fa-edit'></i>Edit
                     </button>
@@ -69,23 +70,32 @@
 
             <form action="" method="post" id="editForm">
                 {{csrf_field()}}
+
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="names" class="col-form-label">Names</label>
                         <input type="text" class="form-control" id="names" name="names" placeholder="Enter Your names"
-                               value="">
-
+                               value="" disabled>
                     </div>
+                    <div class="form-group">
+                        <label for="unit" class="col-form-label">Unit</label>
+                        <select class="form-control" name="unit" id="unit">
+                            <option value="">--Select Unit--</option>
+                            @foreach($units as $unit)
+                                <option value="{{$unit->id}}"> {{$unit->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
                     @error('names')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <div class="form-group">
                         <label for="email" class="col-form-label"> Email</label>
-                        <input type="email" class="form-control" id="email" name="email" value="Enter your email">
-
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
                     @error('email')
-                    <div class="alert alert-danger">{{ $message }}</div>
+                    <div class="alert alert-danger">{{ $message }} </div>
                     @enderror
                     @foreach($roles as $role)
                         <div class="form-check">
@@ -94,6 +104,7 @@
 
                         </div>
                     @endforeach
+
 
                 </div>
 
@@ -121,10 +132,26 @@
                     $tr = $tr.prev('.parent');
                 }
                 var data = table.row($tr).data();
-                console.log(data);
+                var userRoles = $(this).data('roles');
 
+//                 console.log(roles)
                 $('#names').val(data[1]);
+                $('#unit').val(data[2]);
                 $('#email').val(data[2]);
+                $('#unit').val($(this).data('unit'));
+                let roles = $('input[name="roles[]"]');
+
+                $.each(roles, function (index, element) {
+                    var value = $(element).val();
+                    let length = userRoles.length;
+                    for (let i = 0; i < length; i++) {
+                        let role = userRoles[i];
+                        if (value == role) {
+                            // console.log('match')
+                            $(element).prop("checked", true);
+                        }
+                    }
+                });
 
                 $('#editForm').attr('action', '/users/' + data[0] + '/update');
                 $('#editModal').modal('show');

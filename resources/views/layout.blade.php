@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+    @yield('script')
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 </head>
 <body>
 <header>
@@ -38,12 +42,15 @@
                                 <a class="nav-link" href="/list" ><i class="fa fa-list" aria-hidden="true" ></i>Suggestions</a>
                             </li>
 
+
                             @endcan
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbardrop"php
                                        data-toggle="dropdown" href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 
                                     <div class="dropdown-menu">
+
+                                   <a class="dropdown-item" href="/suggestion" ><i class="fa fa-list" aria-hidden="true" ></i>Suggestions List</a>
 
                                         <a class="dropdown-item" href="/usersManagement" ><i class="fas fa-users"></i> Users</a>
 
@@ -104,13 +111,9 @@
 
 
 
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
-<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-@yield('script')
-
 <script>
     //Logout
+
     $(function(){
        $('#logoutLink').on('click',function(e){
            e.preventDefault();
@@ -118,7 +121,6 @@
        })
     });
 //Tooltip
-
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })

@@ -16,9 +16,9 @@
         <thead>
         <tr>
             <th scope="col">#</th>
-{{--            <th scope="col">Names</th>--}}
-{{--            <th scope="col">Email</th>--}}
-{{--            <th scope="col">Phone Number</th>--}}
+            {{--            <th scope="col">Names</th>--}}
+            {{--            <th scope="col">Email</th>--}}
+            {{--            <th scope="col">Phone Number</th>--}}
             <th scope="col">Suggestion Details</th>
             <th scope="col">Assigned</th>
             <th scope="col">Received at</th>
@@ -29,43 +29,43 @@
         @foreach($data as $item)
             <tr>
                 <th scope="row">{{$item->id}}</th>
-{{--                <td>{{$item->names}}</td>--}}
-{{--                <td>{{$item->email}}</td>--}}
-{{--                <td>{{$item->telephone}}</td>--}}
+                {{--                <td>{{$item->names}}</td>--}}
+                {{--                <td>{{$item->email}}</td>--}}
+                {{--                <td>{{$item->telephone}}</td>--}}
                 <td>{{$item->suggestion_details}}</td>
                 <td><span class="badge badge-{{$item->assigned_suggestion_count>0?'primary':'warning'}}">{{$item->assigned_suggestion_count>0?'Assigned':'unsigned'}}</span></td>
                 <td>{{$item->created_at}}</td>
                 <td>
 
-{{--                    Operations--}}
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Action
-                            </button>
-                            <div class="dropdown-menu">
-                                @can('delete-users')
-                                    <a class="dropdown-item" href="/delete/{{$item->id}}">
-                                        <i class='fas fa-trash' style="color: red"></i>Delete</a>
-                                @endcan
-                                    @can('edit-users')
-                                        <a class="dropdown-item" href="/editSuggestion/{{$item->id}}" data-toggle="tooltip" data-placement="top"
-                                           title="Click to edit"><i class='fas fa-edit'></i>Edit</a>
-                                    @endcan
+                    {{--                    Operations--}}
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </button>
+                        <div class="dropdown-menu">
+                            @can('delete-users')
+                                <a class="dropdown-item" href="/delete/{{$item->id}}">
+                                    <i class='fas fa-trash' style="color: red"></i>Delete</a>
+                            @endcan
+                            @can('edit-users')
+                                <a class="dropdown-item" href="/editSuggestion/{{$item->id}}" data-toggle="tooltip" data-placement="top"
+                                   title="Click to edit"><i class='fas fa-edit'></i>Edit</a>
+                            @endcan
 
-                                <div class="dropdown-divider"></div>
-                                    @can('manage-users')
-                                        @if($item->assigned_suggestion_count==0)
-                                            <button
-                                                data-url="{{ route('suggestion.assign',$item->id) }}"
-                                                type="button" class="create-modal btn btn-outline-success btn-sm js-assign dropdown-item"
-                                                id="{{$item->id}}"
-                                                data-toggle="modal" data-target="#assignModal" data-whatever="@getbootstrap"><i
-                                                    class="fas fa-tasks"></i>Assign
-                                            </button>
-                                        @endif
-                                    @endcan
-                            </div>
+                            <div class="dropdown-divider"></div>
+                            @can('manage-users')
+                                @if($item->assigned_suggestion_count==0)
+                                    <button
+                                        data-url="{{ route('suggestion.assign',$item->id) }}"
+                                        type="button" class="create-modal btn btn-outline-success btn-sm js-assign dropdown-item"
+                                        id="{{$item->id}}"
+                                        data-toggle="modal" data-target="#assignModal" data-whatever="@getbootstrap"><i
+                                            class="fas fa-tasks"></i>Assign
+                                    </button>
+                                @endif
+                            @endcan
                         </div>
+                    </div>
                 </td>
             </tr>
         @endforeach
@@ -89,7 +89,7 @@
                 <div class="modal-body">
                     @csrf
                     <div class="form-group">
-                        <label for="departmentName" class="col-form-label">Department</label>
+                        <label for="staff-name" class="col-form-label">Department</label>
                         <select class="form-control" name="assigned_user" id="departmentName">
                             <option value="">__Select a department__</option>
                             @foreach($department as $departments)
@@ -97,25 +97,16 @@
                             @endforeach
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="unit" class="col-form-label">Unit</label>
-                        <select class="form-control" name="assigned_user" id="unit">
-                            <option value="">__Select Unit__</option>
-                            @foreach($unit as $units)
-                                <option value="{{$units->id}}"> {{$units->name}}</option>
+                        <label for="staff-name" class="col-form-label">Staff names</label>
+                        <select class="form-control" name="assigned_user" id="staff-name">
+                            <option value="">__Select a staff__</option>
+                            @foreach($assignStaff as $staff)
+                                <option value="{{$staff->id}}"> {{$staff->names}}</option>
                             @endforeach
                         </select>
                     </div>
-
-    {{--                    <div class="form-group">--}}
-    {{--                        <label for="staff-name" class="col-form-label">Staff names</label>--}}
-    {{--                        <select class="form-control" name="assigned_user" id="staff-name">--}}
-    {{--                            <option value="">__Select a staff__</option>--}}
-    {{--                            @foreach($assignStaff as $staff)--}}
-    {{--                                <option value="{{$staff->id}}"> {{$staff->names}}</option>--}}
-    {{--                            @endforeach--}}
-    {{--                        </select>--}}
-    {{--                    </div>--}}
 
                     <div class="form-group">
                         <label for="staff-name" class="col-form-label">Suggestion Priority</label>

@@ -61,9 +61,12 @@ class User extends Authenticatable
         return false;
 
     }
-
     public function assignedSuggestions()
     {
         return $this->hasMany(AssignedSuggestion::class);
+    }
+    public function unit()
+    {
+        return $this->belongsTo(Unit::class);
     }
 }

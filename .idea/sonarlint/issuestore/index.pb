@@ -37,3 +37,13 @@ Y
 )resources/views/usersManagement.blade.php,9\e\9e3ac96f833d509e410b2d0ef1d7da07bec76030
 N
 resources/views/list.blade.php,2\f\2f518d3e93589e58ecf46486781b59ee7b76eb8a
+{
+Kdatabase/migrations/2020_09_17_131009_create_assigned_suggestions_table.php,4\e\4e854edee1b7311838652fc122989438e43e3432
+U
+%resources/views/suggestions.blade.php,d\1\d1ee90bd5d36876a9ac78c3d64c0c66d2cbd7ba9
+v
+Fdatabase/migrations/2020_09_28_090218_create_add_departments_table.php,6\f\6fbd4bf8db0485018fea16bd4b4c843166f78211
+4
+.env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+t
+Ddatabase/migrations/2020_11_05_162923_add_unit_id_to_users_table.php,9\8\98b8cd6cd7c5a4d39ef18f66061aad53decc4ce6
