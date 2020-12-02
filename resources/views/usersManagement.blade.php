@@ -1,4 +1,6 @@
+@section('script')
 @extends('layout')
+
 
 @section('content')
     <h1 style="text-align: center">User Management Panel</h1>
@@ -26,6 +28,7 @@
             <th scope="col">#</th>
             <th scope="col">Names</th>
             <th scope="col">Email</th>
+            <th scope="col">Unit</th>
             <th scope="col">Roles</th>
             <th scope="col">Operation</th>
         </tr>
@@ -37,6 +40,7 @@
                 <th scope="row">{{$item->id}}</th>
                 <td>{{$item->names}}</td>
                 <td>{{$item->email}}</td>
+                <td><span class="badge badge-pill badge-primary">{{implode('',$item->unit()->get()->pluck('name')->toArray())}}</span></td>
                 <td>{{implode(',',$item->roles()->get()->pluck('name')->toArray()) }}</td>
                 <td>
                     @can('delete-users')
@@ -75,7 +79,7 @@
                     <div class="form-group">
                         <label for="names" class="col-form-label">Names</label>
                         <input type="text" class="form-control" id="names" name="names" placeholder="Enter Your names"
-                               value="" disabled>
+                               value="" >
                     </div>
                     <div class="form-group">
                         <label for="unit" class="col-form-label">Unit</label>
@@ -121,7 +125,7 @@
 </div>
 <!-- Preview Scripts -->
 
-@section('script')
+
     <script type="text/javascript">
         $(document).ready(function () {
             var table = $('#myTable').DataTable();

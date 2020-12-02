@@ -16,7 +16,7 @@ class UnitController extends Controller
         $unit = Unit::all();
         $department=AddDepartment::all();
 
-        return view('unit', ["unit"=> $unit,"departments"=>$department]);
+        return view('units', ["units"=> $unit,"departments"=>$department]);
     }
     public function addUnit(Request $request){
 

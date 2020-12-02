@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('script')
+
 @section('content')
     <h1 style="text-align: center">Suggestion Panel</h1>
     @if(Session::get('status'))
@@ -125,8 +127,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Assign<i class="fa fa-hand-o-right"
-                                                                           aria-hidden="true"></i></button>
+                    <button type="submit" class="btn btn-primary">Assign<i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
                 </div>
             </form>
         </div>
@@ -134,7 +135,7 @@
 </div>
 <!-- Preview Scripts -->
 
-@section('script')
+
     <script type="text/javascript">
         //Data table
         $(document).ready(function () {

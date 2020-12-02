@@ -46,7 +46,7 @@ class SuggestionBoxController extends Controller
             return back();
         }
         $request->validate([
-            'names' => 'required|max:255',
+//            'names' => 'required|max:255',
             'email' => 'required|email|max:40',
 
         ]);

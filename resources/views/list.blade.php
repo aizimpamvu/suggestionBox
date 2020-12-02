@@ -1,6 +1,10 @@
+@section('script')
+
 @extends('layout')
 
+
 @section('content')
+
     <h1 style="text-align: center">Suggestion Panel</h1>
     @if(Session::get('status'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
